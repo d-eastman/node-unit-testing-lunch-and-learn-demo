@@ -1,21 +1,30 @@
-mkdir demo
+# Summary
+Code and notes from lunch and learn presentation about TDD and unit testing, starting basically with an empty repo.
+
+# Live Demo Notes
+
+## Setup
+```mkdir demo
 cd demo
 npm init demo
 git init
 add prototype.js
 add package.json script to run prototype.js
+```
+
+## Live Demo
 
 START DEMO HERE
 
+```
 npm test
-    *and "npm test" after every subsequent step
-install mocha #explain mocha's purpose as a test runner
+install mocha explain mocha's purpose as a test runner
 add package.json: "test": "mocha"
 create test.js
-a describe + it (empty) to test file #empty test pass!
+describe + it (empty) to test file empty test pass!
 add David Eastman test data and fullName call to test and expect
 create fullName.js with empty fn export & require into test.js
-install chai #explain chai's purpose as expect function library
+install chai explain chai's purpose as expect function library
 add return "David Eastman" to product code
 change test data to David Beckham
 refactor test to make one for each David
@@ -24,7 +33,7 @@ add Victoria Beckham test
 refactor prod code to use name.first
 refactor code to use string interpolation
     !!!wall of tests gives us confidence and change guard!!!
-add undefined name param test case #let's say the biz wants an empty string returned
+add undefined name param test case let's say the biz wants an empty string returned
 add undefined name check to product code
 add null name param test case and product code check (separate from undefined check)
 streamline undefined/null check product code
@@ -55,3 +64,4 @@ add James Tiberius Kirk test case and refactor product code to handle that case
     fullName += middle ? middle + " " : "";
     fullName += last ? last : "";
     return fullName;
+```
